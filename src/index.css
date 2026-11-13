@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Rozha One', 'Noto Sans Devanagari', serif;
+    --font-sans: 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #09090b;
+    color: #f4f4f5;
+    touch-action: none;
+  }
+}
+
+.font-display-hindi {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle scrollbars for readable Hindi notes and map drawers */
+.hindi-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.hindi-scroll::-webkit-scrollbar-track {
+  background: rgba(24, 24, 27, 0.7);
+}
+.hindi-scroll::-webkit-scrollbar-thumb {
+  background: rgba(161, 161, 170, 0.35);
+  border-radius: 3px;
+}
+.hindi-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
+
+@keyframes jumpscare-shake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  12% { transform: translate(-14px, 9px) rotate(-2.5deg); }
+  25% { transform: translate(15px, -11px) rotate(2.8deg); }
+  37% { transform: translate(-12px, -8px) rotate(-2deg); }
+  50% { transform: translate(14px, 12px) rotate(2.2deg); }
+  62% { transform: translate(-10px, 6px) rotate(-1.6deg); }
+  75% { transform: translate(11px, -10px) rotate(1.8deg); }
+  88% { transform: translate(-8px, 7px) rotate(-1.2deg); }
+}
+
+@keyframes jumpscare-lunge {
+  0% { transform: scale(0.75); filter: contrast(1.4) brightness(0.7); }
+  35% { transform: scale(1.42); filter: contrast(1.9) saturate(1.6) brightness(1.15); }
+  70% { transform: scale(1.28); filter: contrast(1.6) saturate(1.4) brightness(0.95); }
+  100% { transform: scale(1.15); filter: contrast(1.35) brightness(0.92); }
+}
+
+@keyframes jumpscare-strobe {
+  0%, 100% { opacity: 0.25; }
+  20% { opacity: 0.88; }
+  40% { opacity: 0.15; }
+  60% { opacity: 0.92; }
+  80% { opacity: 0.3; }
+}
+
+.animate-jumpscare-shake {
+  animation: jumpscare-shake 0.18s infinite linear;
+}
+
+.animate-jumpscare-lunge {
+  animation: jumpscare-lunge 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-jumpscare-strobe {
+  animation: jumpscare-strobe 0.22s infinite linear;
+}

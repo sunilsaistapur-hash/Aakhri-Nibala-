@@ -1,0 +1,6 @@
+{
+  "name": "आखिरी निवाला – भूतिया रेस्टोरेंट",
+  "description": "एक संपूर्ण हिंदी भारतीय 3D हॉरर गेम जिसमें 5 मंजिलें, 50 से अधिक कमरे, 25 मिशन, पहेलियाँ और डरावनी वेट्रेस कविता से बचने का रोमांच है।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

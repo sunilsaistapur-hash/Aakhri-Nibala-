@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#3a0a0d" />
+      <stop offset="55%" stop-color="#140709" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+    <radialGradient id="lantern" cx="50%" cy="44%" r="36%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.95" />
+      <stop offset="45%" stop-color="#d97706" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bgGlow)" />
+  <circle cx="256" cy="238" r="180" fill="url(#lantern)" />
+  <!-- Wooden door frame -->
+  <rect x="148" y="96" width="216" height="320" rx="14" fill="#1c110d" stroke="#b45309" stroke-width="10" />
+  <rect x="170" y="122" width="172" height="114" rx="6" fill="#2b1810" stroke="#78350f" stroke-width="5" />
+  <rect x="170" y="256" width="172" height="132" rx="6" fill="#2b1810" stroke="#78350f" stroke-width="5" />
+  <!-- Crimson keyhole / spooky glow -->
+  <circle cx="256" cy="204" r="32" fill="#dc2626" />
+  <circle cx="256" cy="204" r="18" fill="#fef08a" />
+  <path d="M236 226 L276 226 L288 308 L224 308 Z" fill="#991b1b" />
+  <!-- Brass doorbell -->
+  <circle cx="386" cy="248" r="24" fill="#d97706" stroke="#fde68a" stroke-width="5" />
+  <circle cx="386" cy="248" r="9" fill="#fef3c7" />
+</svg>
